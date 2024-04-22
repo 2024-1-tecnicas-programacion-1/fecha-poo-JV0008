@@ -2,9 +2,9 @@ package com.mycompany.fecha.poo;
 
 import java.util.HashMap;
 public class Fecha { //O1
-int dia;
-int mes;
-int anio;
+private int dia;
+private int mes;
+private int anio;
     
 public Fecha (int dia, int mes, int anio) { //O1
 this.dia = dia;
