@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Principal {
 public static void main(String[] args) { //O1
 Scanner lect = new Scanner(System.in);
+    System.out.println("Ingrese día, mes y por último año:");
 int dia = Integer.parseInt(lect.nextLine());
 int mes = Integer.parseInt(lect.nextLine());
 int anio = Integer.parseInt(lect.nextLine());
