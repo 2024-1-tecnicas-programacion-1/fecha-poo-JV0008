@@ -1,22 +1,22 @@
 package com.mycompany.fecha.poo;
 
 import java.util.HashMap;
-public class Fecha {
+public class Fecha { //O1
 int dia;
 int mes;
 int anio;
     
-public Fecha (int dia, int mes, int anio) {
+public Fecha (int dia, int mes, int anio) { //O1
 this.dia = dia;
 this.mes = mes;
 this.anio = anio;
 }
-public String fechaCorta (){
+public String fechaCorta (){ //O1
 
 return (dia + "/" + mes + "/" + anio);
 }
 
-    public String mesLetra (int mes){
+    public String mesLetra (int mes){ //O1
 HashMap<Integer, String> meses = new HashMap<>();
 meses.put(1, "enero");
 meses.put(2, "febrero");
@@ -34,11 +34,11 @@ meses.put(12, "diciembre");
     String resultado = meses.get(mes);
     return resultado;
 }
-        public boolean validarFecha (){
+        public boolean validarFecha (){ //O1
     
         return !(dia >= 32 || dia <= 0 || mes >= 13 || mes <= 0);   
 }
-    public String fechaLarga (){
+    public String fechaLarga (){ //O1
     if (validarFecha()){
         String resultado = mesLetra(mes);
         return (dia + " de " + resultado + " de " + anio);
